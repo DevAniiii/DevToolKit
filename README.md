@@ -43,30 +43,19 @@ npm run build
 npm run start
 ```
 
-## Configuration
-
-The footer name/email and sponsor link live in [`lib/site.ts`](lib/site.ts).
-Update `author.name` and `author.email` with your details:
-
-```ts
-author: {
-  name: "Your Name",
-  email: "you@example.com",
-},
-```
 
 ## Project Structure
 
 ```
 app/
-  layout.tsx          # Root layout, theme provider, header/footer, toaster
-  page.tsx            # Landing page + tool selector
-  globals.css         # Tailwind layers + theme tokens
+  layout.tsx         
+  page.tsx           
+  globals.css        
 components/
-  tools/              # jwt-decoder, base64-tool, json-formatter
-  ui/                 # button, card, textarea, tabs, badge
+  tools/            
+  ui/             
   site-header.tsx, site-footer.tsx, theme-*, copy-button.tsx
 lib/
-  jwt.ts, base64.ts   # Pure decoding logic
-  site.ts, utils.ts   # Config + helpers
+  jwt.ts, base64.ts  
+  site.ts, utils.ts   
 ```
